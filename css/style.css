@@ -1,0 +1,139 @@
+.bg-color-1 {
+  background-color: #ff7a00;
+  border-color: #ff7a00;
+  color: #ffff;
+}
+.bg-color-2 {
+  background-color: #ffa800;
+  border-color: #ffa800;
+  color: #000000;
+}
+
+.bg-color-3 {
+  background: linear-gradient(133.08deg, #ffa800 28.44%, #ff7a00 96.09%);
+  border-color: #ff7a00;
+  color: #ffff;
+}
+.btn-rectangle {
+  background: linear-gradient(133.08deg, #ffa800 28.44%, #ff7a00 96.09%);
+  height: 3rem;
+  width: 9rem;
+  color: #ffff;
+}
+.btn-rectangle:hover {
+  color: #000000;
+  border: #ff7a00;
+}
+.btn-oval-sm {
+  background: linear-gradient(133.08deg, #ffa800 28.44%, #ff7a00 96.09%);
+  height: 3rem;
+  width: 10rem;
+  border-radius: 30px;
+  color: #ffff;
+}
+
+.btn-oval-sm:hover {
+  background: transparent;
+  border: #ff7a00 solid 2px;
+  color: #ff7a00;
+}
+
+.btn-oval-lg {
+  background: linear-gradient(133.08deg, #ffa800 28.44%, #ff7a00 96.09%);
+  height: 3rem;
+  width: 20rem;
+  border-radius: 30px;
+}
+.btn-oval-lg:hover {
+  background: transparent;
+  border: #ff7a00 solid 2px;
+  color: #ff7a00;
+}
+/* Navbar */
+.navbar {
+  background-color: #ffff;
+}
+
+.navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1.1rem;
+}
+.navbar-nav .nav-link:hover {
+  color: #ff7a00;
+}
+
+.navbar-nav,
+nav-item {
+  padding: 0 0.5rem;
+}
+
+/* Hero Section */
+
+#home .row2 {
+  background: #ffa800;
+  height: 350px;
+  border-radius: 30px 30px;
+}
+
+section.home {
+  padding-top: 72px;
+}
+
+/* About Section */
+
+#about .container {
+  width: 100%;
+}
+#about .img-fluid {
+  width: 30%;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+#about .bg-1 {
+  background: #f6f6f6;
+  border-radius: 30px 30px;
+}
+#about .bg-2 {
+  background: #ffa800;
+  height: 10%;
+  border-radius: 30px 30px;
+}
+
+/* Education */
+#education .container {
+  padding-top: 5rem;
+  background: #f6f6f6;
+  border-radius: 30px 30px;
+}
+.horizontal-timeline .items {
+  border-top: 3px solid #ff7a00;
+}
+
+.horizontal-timeline .items .items-list {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  margin-right: 0;
+  border: 3px solid #f6f6f6;
+}
+
+.horizontal-timeline .items .items-list:before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  border-right: 2px dashed #ff7a00;
+  top: 0;
+}
+
+.horizontal-timeline .items .items-list .event-date {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  width: 100px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  padding-top: 8px;
+}

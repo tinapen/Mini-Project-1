@@ -1,0 +1,65 @@
+/* Navbar */
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-item {
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Hero Section */
+  #home .row2 {
+    height: 100px;
+    margin-top: 1rem;
+  }
+
+  /* About Section */
+  #about .img-fluid {
+    width: 50%;
+  }
+
+  #about .container {
+    width: 100vw;
+  }
+
+  #about .bg-2 {
+    height: 10%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #home .row2 {
+    height: 150px;
+    margin-top: 1rem;
+  }
+
+  #about .img-fluid {
+    width: 50%;
+  }
+
+  #about .container {
+    width: 100vw;
+  }
+
+  #about .bg-2 {
+    height: 20%;
+  }
+}
+
+/* Education */
+@media (min-width: 1140px) {
+  .horizontal-timeline .items .items-list {
+    display: inline-block;
+    width: 24%;
+    padding-top: 45px;
+  }
+
+  .horizontal-timeline .items .items-list .event-date {
+    top: -40px;
+  }
+}
