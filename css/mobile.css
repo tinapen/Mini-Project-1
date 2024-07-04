@@ -3,11 +3,14 @@
   .navbar-nav .nav-item {
     padding: 0 0.5rem;
   }
-}
 
-@media screen and (min-width: 1024px) {
   .navbar-brand {
     font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #about .bg-2 p {
+    font-size: 3rem;
   }
 }
 
@@ -19,6 +22,7 @@
   }
 
   /* About Section */
+
   #about .img-fluid {
     width: 50%;
   }
@@ -27,8 +31,11 @@
     width: 100vw;
   }
 
-  #about .bg-2 {
+  #about .bg-1 {
     height: 10%;
+  }
+  #about .bg-2 {
+    height: 30%;
   }
 }
 
@@ -43,11 +50,15 @@
   }
 
   #about .container {
-    width: 100vw;
+    width: 95vw;
+  }
+
+  #about .bg-1 {
+    height: 10%;
   }
 
   #about .bg-2 {
-    height: 20%;
+    height: 30%;
   }
 }
 
