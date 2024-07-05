@@ -8,9 +8,17 @@
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 555px) {
   #about .bg-2 p {
     font-size: 3rem;
+  }
+
+  /* Skills  */
+
+  #skills .container .row .col .card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 24%;
   }
 }
 
@@ -59,6 +67,15 @@
 
   #about .bg-2 {
     height: 30%;
+  }
+
+  /* Home */
+  #home {
+    height: 50vh;
+  }
+
+  section.home {
+    padding-top: 90px;
   }
 }
 

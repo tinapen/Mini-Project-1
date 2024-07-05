@@ -76,15 +76,12 @@ nav-item {
 }
 
 /* Hero Section */
-
-#home .row2 {
-  background: #ffa800;
-  height: 350px;
-  border-radius: 30px 30px;
+#home {
+  height: 100vh;
 }
 
 section.home {
-  padding-top: 72px;
+  padding-top: 150px;
 }
 
 /* About Section */
@@ -186,6 +183,16 @@ section .card {
 }
 
 /* Projects */
+
+#projects {
+  height: 100vh;
+  padding-top: 10%;
+}
 section.projects .card {
   text-align: center;
+}
+
+section.projects a {
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
