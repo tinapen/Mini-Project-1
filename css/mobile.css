@@ -79,15 +79,99 @@
   }
 }
 
-/* Education */
-@media (min-width: 1140px) {
-  .horizontal-timeline .items .items-list {
-    display: inline-block;
-    width: 24%;
-    padding-top: 45px;
+/*Education*/
+
+@media (max-width: 767px) {
+  .timeline-nodes:nth-child(odd) h3,
+  .timeline-nodes:nth-child(odd) p {
+    text-align: left;
+  }
+  .timeline-nodes:nth-child(even) {
+    flex-direction: row;
+  }
+  .timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 1%;
+    width: 0;
+    border-left: 2px dashed #ff7a00;
+    height: 100%;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+  .timeline h3 {
+    font-size: 1.7rem;
+  }
+  .timeline p {
+    font-size: 14px;
+  }
+  .timeline-image:before {
+    top: 100px;
+    left: 3%;
+  }
+  .timeline-image i {
+    position: absolute;
+    left: 1%;
+    top: 90px;
+  }
+  .timeline-nodes:nth-child(odd) .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: auto;
+    right: 100%;
+    width: 0;
+    border-left: 0;
+    border-right: 10px solid #ff7a00;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  .timeline-nodes:nth-child(even) .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 100%;
+    width: 0;
+    border-right: 10px solid var #ff7a00;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  .timeline-date p {
+    text-align: left;
+  }
+  .timeline-image::before {
+    width: 65px;
+    height: 65px;
+  }
+  .timeline-date .time {
+    padding-left: 50px;
+  }
+}
+
+/*extra small device style */
+@media (max-width: 575px) {
+  .timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 4%;
+  }
+  .timeline-image i {
+    position: absolute;
+    top: 90px;
+    left: 4%;
+  }
+  .timeline-image::before {
+    width: 50px;
+    height: 50px;
+    top: 100px;
+    left: 7%;
   }
 
-  .horizontal-timeline .items .items-list .event-date {
-    top: -40px;
+  .timeline-date .time {
+    padding-left: 50px;
   }
 }

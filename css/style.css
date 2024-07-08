@@ -119,36 +119,92 @@ section.home {
   background: #f6f6f6;
   border-radius: 30px 30px;
 }
-.horizontal-timeline .items {
-  border-top: 3px solid #ff7a00;
+:root {
+  --box-shadow1: 0px 0px 18px 2px rgba(10, 55, 90, 0.15);
 }
-
-.horizontal-timeline .items .items-list {
-  display: block;
+:focus {
+  outline: 0px solid transparent !important;
+}
+.timeline {
+  padding: 50px 0;
   position: relative;
-  text-align: center;
-  padding-top: 70px;
-  margin-right: 0;
-  border: 3px solid #f6f6f6;
+}
+.timeline-nodes {
+  padding-bottom: 25px;
+  position: relative;
+}
+.timeline-nodes:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.timeline h3,
+.timeline p {
+  padding: 5px 15px;
+}
+.timeline h3 {
+  font-weight: lighter;
+  background: #ff7a00;
+}
+.timeline p,
+.timeline .time {
+  color: #ff7a00;
+}
+.timeline::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  border-left: 2px dashed #ff7a00;
+  height: 100%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+.timeline-content {
+  border: 1px solid #ff6600;
+  position: relative;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2);
 }
 
-.horizontal-timeline .items .items-list:before {
+.timeline-nodes:nth-child(odd) .timeline-content::after {
   content: "";
   position: absolute;
-  height: 36px;
-  border-right: 2px dashed #ff7a00;
-  top: 0;
+  top: 5%;
+  left: 100%;
+  width: 0;
+  border-left: 10px solid #ff7a00;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
 }
-
-.horizontal-timeline .items .items-list .event-date {
+.timeline-nodes:nth-child(even) .timeline-content::after {
+  content: "";
   position: absolute;
-  top: 36px;
-  left: 0;
-  right: 0;
-  width: 100px;
-  margin: 0 auto;
-  font-size: 0.9rem;
-  padding-top: 8px;
+  top: 5%;
+  right: 100%;
+  width: 0;
+  border-right: 10px solid #ff7a00;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.timeline-image i {
+  position: relative;
+  z-index: 100;
+  text-align: center;
+}
+.timeline-image::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border: 2px dashed #ff7a00;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 1;
 }
 
 /* Skills*/
