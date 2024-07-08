@@ -174,4 +174,8 @@
   .timeline-date .time {
     padding-left: 50px;
   }
+
+  #footer .copyright {
+    text-align: center;
+  }
 }
