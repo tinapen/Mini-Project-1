@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- ICONS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -10,16 +18,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <!-- FONTs -->
     <link
       href="https://fonts.cdnfonts.com/css/catalish-huntera"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/nature-beauty-personal-use"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -28,9 +42,12 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg fixed-top autohide shadow-sm">
       <div class="container-lg">
-        <a class="navbar-brand" href="#">TinaPen</a>
+        <a class="navbar-brand fw-bold" href="#">
+          <img src="./images/tinapen-gradient.png" alt="">
+          <span>Tinapen</span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -80,7 +97,7 @@
             <p class="display-6 fw-bold">Hello, I'm</p>
             <h1 class="display-2 fw-bold">Maria Cristina Peñaflor</h1>
             <h2 class="display-5 fw-bold">Aspiring Web Developer</h2>
-            <button class="btn d-lg btn-oval-sm text-center">
+            <button class="btn btn-oval-sm text-center mt-3">
               See my resume
             </button>
           </div>
@@ -129,9 +146,9 @@
                     <div class="px-4">
                       <div class="event-date badge bg-color-1">2024</div>
                       <h5 class="pt-2">Bootcamp</h5>
-                      <p class="text-muted fs-3">
-                        Full - Stack Web Development <br />
-                        May 2024 - October 2024
+                      <p class="text-muted fs-3 inter">
+                        FULL- STACK WEB DEVELOPMENT <br />
+                        | MAY 2024 - OCTOBER 2024
                         <br /><br />
                       </p>
 
@@ -142,10 +159,9 @@
                     <div class="px-4">
                       <div class="event-date badge bg-color-1">2023</div>
                       <h5 class="pt-2">College</h5>
-                      <p class="text-muted fs-3">
-                        Bachelor of Science in Information Technology <br />
-
-                        June 2019 - May 2023
+                      <p class="text-muted fs-3 inter">
+                        BS IN INFORMATION TECHNOLOGY <br />
+                        | JUNE 2019 - MAY 2023
                       </p>
                       <div class="bg-color-2">Baliwag Polytechnic College</div>
                     </div>
@@ -154,9 +170,9 @@
                     <div class="px-4">
                       <div class="event-date badge bg-color-1">2019</div>
                       <h5 class="pt-2">Senior High School</h5>
-                      <p class="text-muted fs-3">
-                        TECHVOC-ICT Strand Major in Animation <br />
-                        June 2018 - May 2019
+                      <p class="text-muted fs-3 inter">
+                        TECHVOC-ICT STRAND MAJOR IN ANIMATION <br />
+                        | JUNE 2018 - MAY 2019
                       </p>
                       <div class="bg-color-2">Baliwag Polytechnic College</div>
                     </div>
@@ -165,9 +181,9 @@
                     <div class="px-4">
                       <div class="event-date badge bg-color-1">2018</div>
                       <h5 class="pt-2">Senior High School</h5>
-                      <p class="text-muted fs-3">
-                        TECHVOC-ICT Strand Major in Programming <br />
-                        June 2017 - May 2018
+                      <p class="text-muted fs-3 inter">
+                        TECHVOC-ICT STRAND MAJOR IN PROGRAMMING <br />
+                        | JUNE 2017 - MAY 2018
                       </p>
                       <div class="bg-color-2">Systems Technology Institute</div>
                     </div>
@@ -179,6 +195,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
@@ -282,7 +299,9 @@
             </div>
             <div class="col-sm-3 mt-4">
               <div class="card">
-                <i class="canva-icon fw-bold">C</i>
+                <div class="canva-icon fw-bold img-fluid text-center">
+                  <p>C</p>
+                </div>
                 <div class="card-body">
                   <h5 class="card-title fw-bold">CANVA</h5>
                 </div>
@@ -296,7 +315,8 @@
     <section class="projects" id="projects">
       <div class="container">
         <h2 class="display-5 fw-bold mt-5 mb-4 text-center">Projects</h2>
-        <div class="row">
+        <p class="fs-3 text-center">Take a look at some of the projects I’ve had the pleasure of working on.</p>
+        <div class="row mt-5">
           <div class="col-sm-3 mt-3">
             <div class="card">
               <div class="card-body">
@@ -310,12 +330,13 @@
                   A comprehensive business website for managing financial
                   records and transactions
                 </p>
-                <a
-                  href="https://kodeledger-by-tinapen.netlify.app/"
-                  class="btn bg-color-1"
-                  >See Demo</a
-                >
-                <a href="" class="btn bg-color-1">See Repo</a>
+                <div class="card-body text-start">
+                 <p>Technologies used: HTML, CSS, Javascript</p> 
+                </div>
+                <div class="card-body">
+                  <a href="" class="btn bg-color-1 me-4" target="_blank">See Demo</a>
+                  <a href="" class="btn bg-color-1 ms-3" target="_blank">See Repo</a>
+                </div>
               </div>
             </div>
           </div>
@@ -332,8 +353,13 @@
                   A modern news website providing the latest updates and
                   articles about sports, latest trends and technologies.
                 </p>
-                <a href="" class="btn bg-color-1" target="_blank">See Demo</a>
-                <a href="" class="btn bg-color-1" target="_blank">See Repo</a>
+                <div class="card-body text-start">
+                  <p>Technologies used: HTML, CSS, Javascript</p> 
+                 </div>
+                 <div class="card-body">
+                   <a href="" class="btn bg-color-1 me-4" target="_blank">See Demo</a>
+                   <a href="" class="btn bg-color-1 ms-3" target="_blank">See Repo</a>
+                 </div>
               </div>
             </div>
           </div>
@@ -350,8 +376,13 @@
                   A vibrant restaurant website showcasing menus, reservoirs, and
                   customer reviews
                 </p>
-                <a href="" class="btn bg-color-1" target="_blank">See Demo</a>
-                <a href="" class="btn bg-color-1" target="_blank">See Repo</a>
+                <div class="card-body text-start">
+                  <p>Technologies used: HTML, CSS, Javascript</p> 
+                 </div>
+                 <div class="card-body">
+                   <a href="" class="btn bg-color-1 me-4" target="_blank">See Demo</a>
+                   <a href="" class="btn bg-color-1 ms-3" target="_blank">See Repo</a>
+                 </div>
               </div>
             </div>
           </div>
@@ -368,14 +399,183 @@
                   A website that showcasing a short description about me, my
                   skills and recent projects
                 </p>
-                <a href="" class="btn bg-color-1" target="_blank">See Demo</a>
-                <a href="" class="btn bg-color-1" target="_blank">See Repo</a>
+                <div class="card-body text-start">
+                  <p>Technologies used: HTML, CSS, Javascript</p> 
+                 </div>
+                 <div class="card-body">
+                   <a href="" class="btn bg-color-1 me-4" target="_blank">See Demo</a>
+                   <a href="" class="btn bg-color-1 ms-3" target="_blank">See Repo</a>
+                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container px-3">
+        <div class="row align-items-center">
+          <div class="col-sm-6 mb-3 px-5">
+            <p class="contact-header">Contact Me</p>
+            <h2 class="contact-second-hearder fw-bold">
+              <span> Let's Connect</span> <br />
+              and Collaborate!
+            </h2>
+            <p class="contact-content">
+              I'm always excited to connect with fellow tech enthusiasts,
+              potential collaborators, and anyone interested in discussing web
+              development. Whether you have a project in mind, need assistance
+              with your website, or just want to chat about the latest in tech,
+              feel free to reach out. Let's turn ideas into reality together!
+            </p>
+            <div>
+              <div class="col-sm-12 contact-icons mt-5">
+                <p>Follow Me</p>
+
+                <a href="cristinapenaflor.work@gmail.com" target="_blank"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100094654232332"
+                  target="_blank"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a href="tell:+639991835841"><i class="fas fa-phone"></i></a>
+                <a
+                  href="linkedin.com/in/mariacristinataccadpenaflor/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 form">
+            <form action="" class="p-3 text-start">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter Your Name"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter Your Email"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Enter Your Phone Number"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="48"
+                  rows="10"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <button class="btn btn-oval-lg">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>Information</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="fas fa-envelope"></i> cristinapenaflor.work@gmail.com
+                </li>
+                <li class="mb-2"><i class="fab fa-github"></i> github.com/tinapen</li>
+                <li class="mb-2"> <i class="fab fa-linkedin"></i
+                  > linkedin.com/in/mariacristinataccadpenaflor/</li>
+                <li class="mb-2"><i class="fas fa-location-dot"></i> San Rafael, Bulacan,
+                  Philippines, 3008</li>
+                <li class="mb-2"><i class="fas fa-phone"></i> +63 999 183 5841</li>
+                <br>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h3>My Projects</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#">KodeLedger</a></li>
+                <li class="mb-2"><a href="#">KodeNews</a></li>
+                <li class="mb-2"><a href="#">KodeResto</a></li>
+                <li class="mb-2"><a href="#">Portfolio Website</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h3>Quick Links</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#about">About</a></li>
+                <li class="mb-2"><a href="#education">Education</a></li>
+                <li class="mb-2"><a href="#skills">Skills</a></li>
+                <li class="mb-2"><a href="#projects">Projects</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p>2024 | TinaPen | All Rights Reserved</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </form>
+            </div>
+          </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        el_autohide = document.querySelector(".autohide");
+
+        // add padding-top to bady (if necessary)
+        navbar_height = document.querySelector(".navbar").offsetHeight;
+        document.body.style.paddingTop = navbar_height + "px";
+
+        if (el_autohide) {
+          var last_scroll_top = 0;
+          window.addEventListener("scroll", function () {
+            let scroll_top = window.scrollY;
+            if (scroll_top < last_scroll_top) {
+              el_autohide.classList.remove("scrolled-down");
+              el_autohide.classList.add("scrolled-up");
+            } else {
+              el_autohide.classList.remove("scrolled-up");
+              el_autohide.classList.add("scrolled-down");
+            }
+            last_scroll_top = scroll_top;
+          });
+          // window.addEventListener
+        }
+        // if
+      });
+      // DOMContentLoaded  end
+    </script>
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
