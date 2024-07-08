@@ -109,11 +109,15 @@ nav-item {
 
 /* Hero Section */
 #home {
+  background: url(../images/hero-background.png);
   height: 100vh;
 }
 
-section.home {
+#home {
   padding-top: 150px;
+}
+#home .conatiner * {
+  z-index: 1;
 }
 
 /* About Section */
