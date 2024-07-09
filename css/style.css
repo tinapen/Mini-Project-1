@@ -106,7 +106,21 @@ nav-item {
 #home .conatiner * {
   z-index: 1;
 }
+#home h1,
+#home h2,
+#home p,
+#home a {
+  animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
 
+@keyframes reveal {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 /* About Section */
 #about {
   background: linear-gradient(133.08deg, #ffa800 28.44%, #ff7a00 96.09%);
