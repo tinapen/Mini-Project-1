@@ -44,17 +44,18 @@
   border: #ff7a00;
 }
 .btn-oval-sm {
-  background: transparent;
-  border: #ff7a00 solid 2px;
-  color: #ff7a00;
+  background: linear-gradient(133.08deg, #ffa800 28.44%, #ff7a00 96.09%);
+  color: #ffff;
   height: 3rem;
   width: 10rem;
   border-radius: 30px;
+  padding: 10px 0 0;
 }
 
 .btn-oval-sm:hover {
-  background: linear-gradient(133.08deg, #ffa800 28.44%, #ff7a00 96.09%);
-  color: #ffff;
+  background: transparent;
+  border: #ff7a00 solid 2px;
+  color: #ff7a00;
 }
 
 .btn-oval-lg {
@@ -71,8 +72,11 @@
 /* Navbar */
 .navbar {
   background-color: #ffff;
+  transition: 0.5;
 }
-
+.navbar.top {
+  background: transparent;
+}
 .navbar img {
   width: 20%;
 }
@@ -234,6 +238,17 @@ nav-item {
   background-color: #fff;
   z-index: 1;
 }
+
+/* Experience  */
+#experience {
+  background: linear-gradient(133.08deg, #ffa800 28.44%, #ff7a00 96.09%);
+  padding: 8% 5% 5%;
+}
+#experience hr {
+  height: 3px;
+  background-color: #000000;
+  opacity: 1;
+}
 /* Skills*/
 #skills {
   background: #faf9f9;
@@ -280,7 +295,7 @@ section.skills i {
 
 section.skills .card {
   border: 2px solid #000000;
-  box-shadow: 4px 4px 5px#000000;
+  box-shadow: 4px 4px 10px #6e6b6b;
   transition: all 0.4s;
 }
 
@@ -303,7 +318,7 @@ section.skills .card:hover {
 /* Projects */
 
 #projects {
-  padding: 5% 0 10%;
+  padding: 5% 0 5%;
   background: linear-gradient(133.08deg, #ffa800 28.44%, #ff7a00 96.09%);
 }
 
@@ -313,6 +328,11 @@ section.skills .card:hover {
   margin-bottom: 10px;
 }
 
+#projects .card:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  box-shadow: -20px 20px 50px 15px rgba(53, 52, 52, 0.5);
+}
 #projects .card img {
   border: #ffa800 solid 2px;
 }
