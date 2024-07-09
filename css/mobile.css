@@ -12,38 +12,32 @@
     padding-top: 10rem;
     height: 100vh;
   }
+  #home h1 {
+    font-size: 5rem;
+  }
+  #home h2 {
+    font-size: 3rem;
+  }
+
+  #home p {
+    font-size: 2rem;
+  }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1000px) {
   #home {
     padding-top: 5rem;
-    height: 90vh;
-  }
-  /* About Section */
-
-  #about .img-fluid {
-    width: 50%;
-  }
-
-  #about .container {
-    width: 100vw;
-  }
-
-  #about .bg-1 {
-    height: 10%;
-  }
-  #about .bg-2 {
-    height: 30%;
-  }
-}
-
-@media screen and (max-width: 990px) {
-  #home {
-    padding-top: 1rem;
     height: 80vh;
   }
 
   #home h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+  }
+  #home h2 {
+    font-size: 3rem;
+  }
+  #home p {
+    font-size: 1rem;
   }
   /* About  */
   #about .img-fluid {
@@ -62,23 +56,42 @@
     height: 30%;
   }
 
-  /* Home */
-  #home {
-    height: 50vh;
-  }
-
   section.home {
     padding-top: 90px;
   }
 }
 
-/*Education*/
+@media (max-width: 990 px) {
+  #home {
+    padding-top: 5rem;
+    height: 50vh;
+  }
+
+  #home h1 {
+    font-size: 4rem;
+  }
+  #home h2 {
+    font-size: 2rem;
+  }
+  #home p {
+    font-size: 1.5rem;
+  }
+}
 
 @media (max-width: 767px) {
   /* Hero  */
   #home {
-    padding-top: 1rem;
+    padding-top: 3rem;
     height: 50vh;
+  }
+  #home h1 {
+    font-size: 3rem;
+  }
+  #home h2 {
+    font-size: 2rem;
+  }
+  #home p {
+    font-size: 1rem;
   }
   /* Education  */
   .timeline-nodes:nth-child(odd) h3,
@@ -148,12 +161,51 @@
     padding-left: 50px;
   }
 }
+@media screen and (max-width: 600px) {
+  #home {
+    padding-top: 3rem;
+    height: 50vh;
+  }
+  #home h1 {
+    font-size: 3rem;
+  }
+  #home h2 {
+    font-size: 2rem;
+  }
+  #home p {
+    font-size: 1.5rem;
+  }
+  /* About Section */
 
+  #about .img-fluid {
+    width: 50%;
+  }
+
+  #about .container {
+    width: 100vw;
+  }
+
+  #about .bg-1 {
+    height: 10%;
+  }
+  #about .bg-2 {
+    height: 30%;
+  }
+}
 /*extra small device style */
 @media (max-width: 575px) {
   #home {
-    padding-top: 1rem;
+    padding-top: 5rem;
     height: 50vh;
+  }
+  #home h1 {
+    font-size: 2.5rem;
+  }
+  #home h2 {
+    font-size: 1.5rem;
+  }
+  #home p {
+    font-size: 1rem;
   }
   .timeline::before {
     content: "";
