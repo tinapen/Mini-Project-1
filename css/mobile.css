@@ -1,4 +1,15 @@
-/* Navbar */
+@media screen and (min-width: 1600px) {
+  #projects .card {
+    height: 32rem;
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  #projects .card {
+    height: 35rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .navbar-nav .nav-item {
     padding: 0 0.5rem;
@@ -61,7 +72,7 @@
   }
 }
 
-@media (max-width: 990 px) {
+@media (max-width: 990px) {
   #home {
     padding-top: 5rem;
     height: 50vh;
@@ -91,7 +102,7 @@
     font-size: 2rem;
   }
   #home p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   /* Education  */
   .timeline-nodes:nth-child(odd) h3,
@@ -160,6 +171,11 @@
   .timeline-date .time {
     padding-left: 50px;
   }
+
+  /* Projects  */
+  #projects .card {
+    height: 38rem;
+  }
 }
 @media screen and (max-width: 600px) {
   #home {
@@ -199,13 +215,13 @@
     height: 50vh;
   }
   #home h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   #home h2 {
     font-size: 1.5rem;
   }
   #home p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .timeline::before {
     content: "";
@@ -244,5 +260,10 @@
 
   #footer .copyright {
     text-align: center;
+  }
+
+  /* Projects  */
+  #projects .card {
+    height: 35rem;
   }
 }
