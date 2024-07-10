@@ -333,9 +333,9 @@ section.skills .card:hover {
   color: #ffff;
 }
 
-#projects .card span a:hover {
+#projects span a:hover {
   text-decoration: underline;
-  text-decoration-color: #fff;
+  text-decoration-color: #ffffff;
 }
 
 #projects img {
