@@ -108,8 +108,7 @@ nav-item {
 }
 #home h1,
 #home h2,
-#home p,
-#home a {
+#home p {
   animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
 }
 
@@ -142,7 +141,7 @@ nav-item {
   height: 445px;
 }
 #about .bg-2 {
-  height: 350px;
+  height: 300px;
   border-radius: 30px 30px;
   background: #ffff;
 }
