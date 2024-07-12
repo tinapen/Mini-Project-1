@@ -1,10 +1,39 @@
 @media screen and (min-width: 1600px) {
+  #home {
+    padding-top: 10rem;
+    height: 100vh;
+  }
+
+  #home h1 {
+    font-size: 5rem;
+  }
+  #home h2 {
+    font-size: 3rem;
+  }
+  #home p {
+    font-size: 2rem;
+  }
   #projects .card {
     height: 32rem;
   }
 }
 
 @media screen and (max-width: 1599px) {
+  #home {
+    padding-top: 5rem;
+    height: 60vh;
+  }
+
+  #home h1 {
+    font-size: 4rem;
+  }
+  #home h2 {
+    font-size: 2rem;
+  }
+  #home p {
+    font-size: 1.5rem;
+  }
+
   .navbar img {
     width: 40%;
   }
@@ -30,37 +59,22 @@
   .navbar-brand {
     font-size: 1.5rem;
   }
-
-  #home {
-    padding-top: 10rem;
-    height: 100vh;
-  }
-  #home h1 {
-    font-size: 5rem;
-  }
-  #home h2 {
-    font-size: 3rem;
-  }
-
-  #home p {
-    font-size: 2rem;
-  }
 }
 
 @media screen and (max-width: 1000px) {
   #home {
     padding-top: 5rem;
-    height: 80vh;
+    height: 60vh;
   }
 
   #home h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   #home h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   #home p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   /* About  */
   #about .img-fluid {
@@ -344,6 +358,29 @@
   }
 }
 @media (max-width: 300px) {
+  #home {
+    padding-top: 3rem;
+    height: 40vh;
+  }
+
+  #home h1 {
+    font-size: 5rem;
+  }
+  #home h2 {
+    font-size: 3rem;
+  }
+  #home p {
+    font-size: 2rem;
+  }
+  #home h1 {
+    font-size: 1.5rem;
+  }
+  #home h2 {
+    font-size: 1rem;
+  }
+  #home p {
+    font-size: 1rem;
+  }
   #experience {
     height: 35vh;
   }
