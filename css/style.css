@@ -75,7 +75,7 @@
   width: 13%;
 }
 .navbar-brand span {
-  background-image: linear-gradient(133.08deg, #ff7a00 28.44%, #ffa800 96.09%);
+  background: linear-gradient(133.08deg, #ffa800 28.44%, #ff7a00 96.09%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -94,7 +94,7 @@
 
 /* Hero Section */
 #home {
-  background: url(../images/hero-background.png);
+  background: url(../images/hero.png);
   width: 100vw;
 }
 
@@ -252,13 +252,13 @@
   text-align: center;
   padding: 4% 0 6%;
 }
-section.skills i {
-  font-size: 2rem;
+#skills i {
+  font-size: 4rem;
   margin: 1rem auto 0;
   border: 2px solid #000000;
   color: #000000;
-  width: 4rem;
-  height: 4rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -268,11 +268,11 @@ section.skills i {
 
 .canva-icon {
   font-family: "Catalish Huntera", sans-serif;
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin: 1rem auto 0;
   border: 2px solid #000000;
-  width: 4rem;
-  height: 4rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -283,24 +283,11 @@ section.skills i {
 
 .canva-icon p {
   border: 1px solid #000000;
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: #000000;
   color: #ffa800;
-}
-
-section.skills .card {
-  border: 2px solid #000000;
-  box-shadow: 4px 4px 10px #6e6b6b;
-  transition: all 0.4s;
-}
-
-section.skills .card:hover {
-  border: 2px solid #000000;
-  box-shadow: 4px 4px 5px #ff6600;
-  transition: all 0.4s;
-  transform: scale(1.1);
 }
 
 #skills span a {
@@ -313,12 +300,15 @@ section.skills .card:hover {
   color: #ffa800;
 }
 /* Projects */
-
 #projects {
   padding: 5% 0 5%;
   background: linear-gradient(133.08deg, #ffa800 28.44%, #ff7a00 96.09%);
 }
 
+#projects i {
+  font-size: 30px;
+  padding: 0 5px 0;
+}
 #projects .card {
   box-shadow: 0px 35px 40px -17px rgba(53, 52, 52, 0.5);
   text-align: center;
