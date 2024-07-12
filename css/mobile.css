@@ -330,12 +330,27 @@
     height: 35rem;
   }
 
+  #experience {
+    height: 45vh;
+  }
+
   #experience h3,
   #experience h4 {
-    font-size: 15px;
+    font-size: 19px;
     text-align: justify;
   }
   #footer .info li a {
     font-size: 12px;
+  }
+}
+@media (max-width: 300px) {
+  #experience {
+    height: 35vh;
+  }
+
+  #experience h3,
+  #experience h4 {
+    font-size: 13px;
+    text-align: start;
   }
 }
