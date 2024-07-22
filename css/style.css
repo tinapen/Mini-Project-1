@@ -252,13 +252,17 @@
   text-align: center;
   padding: 4% 0 6%;
 }
+
+#skills .skill-box {
+  width: 17rem;
+}
 #skills i {
   font-size: 4rem;
   margin: 1rem auto 0;
   border: 2px solid #000000;
   color: #000000;
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -268,11 +272,11 @@
 
 .canva-icon {
   font-family: "Catalish Huntera", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 1rem auto 0;
   border: 2px solid #000000;
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -283,13 +287,24 @@
 
 .canva-icon p {
   border: 1px solid #000000;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: #000000;
   color: #ffa800;
 }
 
+#skills i:hover {
+  box-shadow: 0px 35px 40px -17px rgba(169, 169, 169, 1.5);
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+#skills .canva-icon:hover {
+  box-shadow: 0px 35px 40px -17px rgba(169, 169, 169, 1.5);
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
 #skills span a {
   text-decoration: none;
   color: #ff6600;

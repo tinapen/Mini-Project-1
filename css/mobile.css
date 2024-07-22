@@ -262,6 +262,18 @@
   #projects .card {
     height: 37rem;
   }
+
+  #skills i:hover {
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
+
+  #skills .canva-icon:hover {
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
 }
 /*extra small device style */
 @media (max-width: 575px) {
@@ -333,6 +345,18 @@
   #projects .card {
     height: 37rem;
   }
+
+  #skills i:hover {
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
+
+  #skills .canva-icon:hover {
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
 }
 
 @media (max-width: 500px) {
@@ -355,6 +379,18 @@
   }
   #footer .info li a {
     font-size: 12px;
+  }
+
+  #skills i:hover {
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
+
+  #skills .canva-icon:hover {
+    box-shadow: none;
+    transform: none;
+    transition: none;
   }
 }
 @media (max-width: 300px) {
@@ -389,5 +425,17 @@
   #experience h4 {
     font-size: 13px;
     text-align: start;
+  }
+
+  #skills i:hover {
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
+
+  #skills .canva-icon:hover {
+    box-shadow: none;
+    transform: none;
+    transition: none;
   }
 }
